@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #87A08B;
+    --text-color: #527859;
+}
+
+.big-container {
+    height: 100vh;
+}
+
+body {
+    background-color:#9baa9d;    
+}
+
+/* SignUP start */
+    /* Start part one */
+    .big-container {
+        display: grid;
+        grid-template-columns: 1.75fr 2.25fr;
+    }
+
+    .big-container .part-one{
+        grid-column: 1;
+    }
+
+    .big-container .part-one .col {
+        padding: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .big-container .part-one .hello {
+        margin: 50px 20px;
+    }
+
+    .big-container .part-one .hello p {
+        color: #FFFFFF;
+        font-size: 70px;
+        font-weight: 600;
+        line-height: 120px;
+        margin: 0;
+    }
+
+
+    .big-container .part-one .hello i {
+        display: inline;
+        color: rgba(201, 222, 205, 1);
+        width: 100px;
+        height: 100px;
+        font-size: 60px;
+    }
+    /* End part one */
+
+    /* Start part two */
+    .big-container .part-two {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        align-content: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .big-container .part-two::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 4%;
+        background-color: #FFFFFF;
+        left: -26px;
+        z-index: 1;
+        border-bottom-left-radius: 45px;
+        border-top-left-radius: 45px;
+    }
+
+    .big-container .part-two .lang{
+        font-size: 15px;
+        font-weight: 400;
+        opacity: 30%;
+        position: absolute;
+        top: 0;
+        right: 40px;
+        padding: 10px 15px;
+    }
+
+    .big-container .part-two .lang::after {
+        content: "";
+        position: absolute;
+        border-width: 7px;
+        border-style: solid;
+        border-color: black transparent transparent transparent;
+        opacity: 30%;
+        top: 15px;
+        right: -3px;
+    }
+
+    .big-container .part-two .user-quick {
+        display: grid;
+        width: 75%;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 50px;
+    }
+
+
+    .big-container .part-two .user-quick p {
+        font-size: 30px;
+        font-weight: 600;
+        grid-row: 1/1;
+        grid-column: span 2;
+        margin: 30px 0;
+    }
+
+    .big-container .part-two img {
+        width: 20px;
+        margin-right: 10px;
+    }
+
+    .big-container .part-two .user-quick a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.32);
+    padding: 15px;
+    display: flex;
+    justify-items: center;
+    background-color: #D9D9D9;
+    width: fit-content;
+    height: 45px;
+    border-radius: 9px;
+    align-items: center;
+    }
+
+    .big-container .part-two .or {
+        align-self: center;
+        display: block;
+        font-size: 20px;
+        font-weight: 400;
+        opacity: 30%;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+
+    .big-container .part-two .user-data {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        justify-content: space-around;
+    }
+
+    .big-container .part-two .user-data input {
+        display: block;
+        outline: none;
+        border: none;
+        text-align: left;
+        width: 420px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .big-container .part-two .user-data .password {
+        position: relative;
+    }
+
+    .big-container .part-two .user-data .password i{
+        position: absolute;
+        top: 0;
+        right: 10px;
+        opacity: 50%;
+    }
+
+    .big-container .part-two .create-acc {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .big-container .part-two .create-acc .input {
+        border: none;
+        padding: 25px;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: rgba(135, 160, 139, 0.64);
+        color: #FFFFFF;
+        border: none;    
+        max-width: 300px;
+    }
+
+    .big-container .part-two .create-acc a {
+        text-decoration: none;
+        color: #87A08B;
+    }
+    /* End part two */
+
+/* SignUp end */

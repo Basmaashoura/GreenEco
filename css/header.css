@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #87A08B;
+    --text-color: #527859;
+}
+
+/* Header start */
+.header {
+    grid-row: 1;
+    grid-column: span 4;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.logo-name {
+    position: relative;
+    transform: translate(15px);
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.logo-name::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    height: calc(100% + 10px);
+    width: 1px;
+    background-color: var(--text-color);
+}
+
+.logo-img{
+    width: 50px;
+    height: 50px;
+    filter: brightness(0.5);
+}
+
+nav {
+    border-bottom: 2px solid rgba(201, 222, 205, 0.5)
+}
+
+.header nav {
+    background-color: rgba(201, 222, 205, 0.15);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.header nav ul{
+    margin: 0 5px;
+}
+
+.header nav ul li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 15px;
+    transition: opacity 0.5s;
+}
+
+.header nav ul li:not(:first-child) {
+    padding: 0 15px;
+}
+
+.header nav input{
+    width: 220px;
+    height: 30px;
+    padding:0 30px;
+    border: 1px solid #87A08B;
+    border-radius: 15px;
+    position: relative;
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../webfonts/fa-solid-900.woff2");
+}
+
+.header nav .search-bar::before {
+    position: absolute;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    content:'\f002';
+    top: 40px;
+    right: 395px;
+    color: red;
+    z-index: 1;
+    opacity: 50%;
+}
+
+
+.header nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.header nav .icons {
+    width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    transition: opacity 0.5s;
+}
+
+.header nav .icons a:not(:last-child){
+    padding-right: 5px;
+}
+
+.header nav ul li:hover,
+.header nav .icons i:hover {
+    opacity: 60%;
+}
+
+.home-container .search-bar input,
+.pContent-container .search-bar input,
+.payment-container  .search-bar input {
+    color: rgba(0, 0, 0, 0.27);
+    background-color: rgba(135, 160, 139, 0.13);
+}
+
+.home-container .header nav .search-bar::before,
+.pContent-container .header nav .search-bar::before,
+.payment-container .header nav .search-bar::before{
+    top: 26px;
+    right: 510px;
+}
+
+
+/* Header end */

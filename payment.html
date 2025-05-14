@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenEco - Products</title>
+    <!-- Main template CSS file -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/payment.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Render all elements normally in any browser -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font awsome library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="payment-container">
+        <div class="header">
+            <nav>
+            <div class="logo">
+                <img class="logo-img" src="/images/green-logo.png" alt="">
+                <h3 class="logo-name">Green-Eco</h3>
+            </div>
+        
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+                <div class="search-bar">
+                    <input type="search" name="search-bar" id="#search" placeholder="search">
+                </div>
+                <div class="icons">
+                    <a href="favourite"><i class="fa-regular fa-heart"></i></a>
+                    <a href="cart"><i class="fa-duotone fa-solid fa-cart-shopping"></i></a>
+                    <a href="log-in.html"><i class="fa-regular fa-user"></i></a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="re-check">
+                <div class="first-line">
+                    Have a coupon? <a href="#">Click here</a> 
+                </div>
+                <div class="Second-line">
+                    Returning customer? <a href="sign-up.html">Log in</a> 
+                </div>
+            </div>
+            
+            <div class="customer-info">
+                <input type="text" name="fullName" id="fullName" placeholder="Full name">
+                <input type="text" name="fullAddress" id="fullAddress" placeholder="Full Address">
+                <input type="text" name="governorate" id="governorate" placeholder="Governorate">
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <input type="tel" name="mobile" id="mobile" placeholder="Mobile Number">
+                <input type="text" name="order-notes" id="order-notes" placeholder="Order Notes">
+            </div>
+
+            <div class="order-info">
+                <h2>YOUR ORDER</h2>
+                <div class="order-details">
+                    <p>Product</p>
+                    <div class="first-item">
+                        <img src="./images/eco-tech2.jpg" alt="">
+                        <p>Oatmeal & Lavender Bath Soak</p>
+                        <p>176.90&dollar;</p>
+                        <div class="counter">
+                            <button class="counter-btn">-</button>
+                            <div class="counter-value">0</div>
+                            <button class="counter-btn">+</button>
+                        </div>
+                    </div>
+
+                    <div class="Sec-item">
+                        <img src="" alt="">
+                        <p>Eco Glow Starter Kit</p>
+                        <p>49.00&dollar;</p>
+                        <div class="counter">
+                            <button class="counter-btn">-</button>
+                            <div class="counter-value">0</div>
+                            <button class="counter-btn">+</button>
+                        </div>
+                    </div>
+                    <div class="subtotal"> Subtotal: </div>
+                    <div class="shipping"> Shipping: </div>
+                    <div class="total"> Total: </div>
+                </div>
+                <div class="card">
+                    <input type="radio" name="payment-way" id="card" placeholder="#">
+                    <label for="card" class="label-top">Debit/credit Card Payment </label>
+                    <div class="card-info">
+                        <h2 class="card-title">Card Information</h2>
+                        <div class="card-number-input">
+                            <input type="text" maxlength="4" placeholder="1234">
+                        </div>
+                        
+                        <div class="card-details">
+                            <div class="input-group">
+                                <label class="input-label">MM/YY</label>
+                                <input type="text" maxlength="5" placeholder="MM/YY">
+                            </div>
+                            <div class="input-group">
+                                <label class="input-label">CVV</label>
+                                <input type="text" maxlength="3" placeholder="CVV">
+                            </div>
+                        </div>
+                        
+                        <div class="card-name">
+                            <label class="input-label">Card Holder Name</label>
+                            <input type="text" placeholder="Ex. Salma Tarek">
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="wallet">            
+                    <input type="radio" name="payment-way" id="mobile-wallet" placeholder="#">
+                    <label for="mobile-wallet" class="label-top">Mobile Wallets</label>                
+                    <input type="tel" name="mobile" id="wallet-num" placeholder="Mobile Number">
+                </div>
+
+                <div class="cash">
+                <input type="radio" name="payment-way" id="cash" placeholder="#">
+                <label for="cash"> Cash On Delivery- عند الاستلام</label>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+        <div class="logo">
+            <img class="logo-img" src="/images/green-logo.png" alt="">
+            <h3 class="logo-name">Green-Eco</h3>
+        </div>
+
+        <div class="address">
+            <h4>Address:</h4>
+            <p>Green Eco Headquarters 25 Green Life Street, Nature District, Eco City, Planet Earth  </p>
+        </div>
+
+        <div class="contact">
+            <h4>Contact Details</h4>
+            <p>405-4-15-9249</p>
+            <p>405-658-2025 Green-Eco</p>
+        </div>
+        <div class="legal">
+            <h4>Legal</h4>
+            <ul>
+                <li>Privacy</li>
+                <li>Terms & Conditions </li>
+            </ul>
+        </div>
+
+        <div class="footer-foot">
+            <p> support@greeneco-store.com </p>
+        </div>
+        </footer>
+    </div>
+
+    
+    
+    
+</body>
+</html>

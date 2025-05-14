@@ -1,0 +1,221 @@
+/* Start Global Rules */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Serif", serif;
+}
+
+.pContent-container {
+    height: 175vh;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+/* Mobile */
+@media (min-width: 320px) {
+    .container {
+        width: 320px;
+    }
+}
+
+/* Tablets */
+@media (min-width: 481) {
+    .container {
+        width: 481px;
+    }
+}
+
+/* Laptops */
+@media (min-width: 769px) {
+    .container {
+        width: 769px;
+    }
+}
+
+/* Large */
+@media (min-width: 1025px) {
+    .container {
+        width: 1025px;
+    }
+}
+
+/* X Large */
+@media (min-width: 1201px) {
+    .container {
+        width: 1201px;
+    }
+}
+
+/* End Global Rules */ 
+
+.pContent-container main .products{
+    height: calc(460px * 2.1);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* align-content: unset; */
+    padding-bottom: 5px;
+}
+
+
+.product {
+    display: grid;
+    grid-template-columns: 700px 675px;
+    grid-template-rows: auto; 
+    grid-template-areas:"img info"
+                        "img info"
+                        "img info";
+    margin: 40px auto 180px;
+    column-gap: 35px;
+    background-color: rgba(201, 222, 205, 0.09);
+}
+
+.product img {
+    grid-area: img;
+    width: 585;
+    height: 910px;
+    border-radius: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.09);
+}
+
+.product .info {
+    grid-area: info;
+    display: grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 200px 150px 500px;
+}
+
+.product .info .first-part,
+.product .info .second-part {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.product .info .first-part {
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:"title title"
+                        "status price"
+                        "counter wishlist";
+    height: 200px;
+    justify-items: start;
+    align-content: space-evenly;
+}
+
+.product .info .product-title {
+    grid-area: title;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.product .info .price {
+    grid-area: price;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 5px;
+    color: rgba(40, 64, 43, 1);
+}
+
+.product .info .status {
+    grid-area: status;
+    font-size: 25px;
+    font-weight: 400;
+    padding-left: 20px;
+    position: relative;
+}
+
+.product .info .status::before,
+.third-part .features p::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: rgba(135, 160, 139, 0.3);
+}
+
+.product .info .wishlist {
+    grid-area: wishlist;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.product .info .wishlist p,
+.product .info .wishlist i {
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 7px;
+}
+
+.product .info .counter {
+    grid-area: counter;
+    display: flex;
+    padding: 0;
+}
+
+.third-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.third-part .features p {
+    font-size: 20px;
+    position: relative;
+    padding-left: 20px;
+
+}
+
+.third-part .features h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(23, 39, 25, 0.9);
+}
+
+.product .info .third-part .features input {
+    justify-self: center;
+}
+
+@font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../webfonts/fa-solid-900.woff2");
+}
+
+.product .second-part {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+.product .second-part p:first-child {
+    font-size: 25px;
+}
+.product .second-part .icon {
+    font-size: 20px;
+    font-weight: 400;
+    position: relative;
+    padding-left: 30px;
+}
+
+.product .second-part .icon::before {
+    position: absolute;
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    -webkit-font-smoothing: antialiased;
+    content:'\f06e';
+    top: 0px;
+    left: 0px;
+    color: red;
+    z-index: 1;
+    opacity: 50%;
+    width: 10px;
+    height: 10px;
+}

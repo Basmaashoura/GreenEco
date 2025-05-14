@@ -1,0 +1,67 @@
+.logo, .logo-name, logo-img{
+    margin: 0;
+}
+
+footer {
+    background-color: rgba(135, 160, 139, 0.99);
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    position: relative;
+    bottom: 0;
+    height: fit-content;
+    width: 100%;
+}
+
+.logo {
+    grid-column: 1/-1;
+    grid-row: 1/1;
+}
+footer div {
+    margin-bottom: 10px;
+}
+
+footer div p,
+footer div h4 {
+    margin: 10px 0;
+    padding: 0 15px;
+}
+footer div h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+footer div p {
+    font-size: 15px;
+    font-weight: 400;
+    padding-left: 25px;
+}
+
+footer .address {
+    grid-column: 1/-1;
+    grid-row: 2/2;
+}
+
+footer .contact {
+    grid-column: 1/2;
+    grid-row: 3/3;
+}
+
+footer .legal {
+    grid-column: 2/2;
+    grid-row: 3/4;
+}
+
+footer .footer-foot {
+    grid-column: 1/-1;
+    grid-row: 4/5;
+    justify-items: center;
+    background-color: rgba(92, 120, 96, 1);
+    padding: 5px;
+    margin: 0;
+    position: relative;
+    bottom: 0;
+    font-size: 22px;
+    font-weight: 400;
+}
